@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "sourceMap": true,
+    "strict": false,//true
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": false,//true
+    "declaration": true,
+    "declarationMap": true
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
+/*| Opción                             | Razón                                                                                         |
+| ---------------------------------- | --------------------------------------------------------------------------------------------- |
+| `"target": "esnext"`               | Aprovecha las últimas features JS sin romper compatibilidad.                                  |
+| `"module": "commonjs"`             | Node (sin `"type": "module"`) usa CommonJS por defecto.                                       |
+| `"moduleResolution": "node"`       | Permite importar módulos de `node_modules` sin problema.                                      |
+| `"esModuleInterop": true`          | Hace posible usar `import express from "express"` aunque Express exporte en formato CommonJS. |
+| `"rootDir"` y `"outDir"`           | Organiza código fuente y salida (`src` → `dist`).                                             |
+| `"sourceMap": true`                | Facilita debug con VSCode (puedes hacer breakpoints en TS).                                   |
+| `"strict": true`                   | Activa todas las comprobaciones de tipos.                                                     |
+| `"declaration": true`              | Genera archivos `.d.ts` (útil si exportas una librería).                                      |
+| `"skipLibCheck": true`             | Evita warnings innecesarios por tipos de dependencias.                                        |
+| `"resolveJsonModule": true`        | Permite importar archivos `.json` directamente.                                               |
+| `"noUncheckedIndexedAccess": true` | Mejora la seguridad de tipos en arrays y objetos.                                             |
+*/
