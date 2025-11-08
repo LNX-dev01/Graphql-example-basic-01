@@ -2,14 +2,15 @@
 .env
 #graphql_modular
 graphql_modular/
-#graphql_mongo
-graphql_mongo/
 #dto
 dto/
 #interfaces
 interfaces/
 repositories/
-models/
 tmp.ts
 
 Creación de carpeta del proyecto.docx
+
+
+#The files have already been uploaded to Git.
+graphql_base/
